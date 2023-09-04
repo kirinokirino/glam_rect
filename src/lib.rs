@@ -389,6 +389,29 @@ impl IRect {
     }
 }
 
+impl AsRef<Rect> for Rect
+{
+    fn as_ref(&self) -> &Self
+    {
+        self
+    }
+}
+
+impl AsRef<IRect> for IRect
+{
+    fn as_ref(&self) -> &Self
+    {
+        self
+    }
+}
+
+impl AsRef<URect> for URect
+{
+    fn as_ref(&self) -> &Self
+    {
+        self
+    }
+}
 
 #[cfg(test)]
 mod tests {
